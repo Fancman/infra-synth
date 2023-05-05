@@ -60,7 +60,7 @@ Example on my PC:
 python main.py --input "C:/DEV/python/DP/pokusy/losses/extracted_frames/25.jpg" --person-weights "C:/DEV/python/DP/cuda_yolo/runs/train/exp22/weights/best.pt" --knife-weights "C:/DEV/python/DP/Odovzdanie/YOLO detekcia/YOLOv8/Grayscale/weights/best.pt" --model-version "yolov8" --file-type "photo" --task "predict"
 ```
 
-<img src='images/Predict_example.PNG' align="right" width=384>
+<img src='images/Predict_example.PNG'>
 
 ### Predict Video
 
@@ -80,7 +80,7 @@ python main.py --input "C:/DEV/p" --person-weights  "C:/DEV/python/DP/cuda_yolo/
 
 As input should be path to directory under which there are short videos for example I used E:/Handbrake/Segments and script took recursively all video files of .m4v type under Segments directory. The more videos will be under the input path, the longer the validation will take.
 
-<img src='images/Path_example.PNG' align="right" width=384>
+<img src='images/Path_example.PNG'>
 
 Execute in CMD:
 ```bash
@@ -90,3 +90,20 @@ Example on my PC:
 ```bash
 python main.py --input "C:/DEV/p" --person-weights  "C:/DEV/python/DP/cuda_yolo/runs/train/exp22/weights/bestpython main.py --input "E:/Handbrake/Segments/20.3.2023 - Rotunda/Dscf0001/Dscf0001-00.01.04.429-00.01.22.688-seg1.m4v" --person-weights "C:/DEV/python/DP/cuda_yolo/runs/train/exp22/weights/best.pt" --knife-weights "C:/DEV/python/DP/Odovzdanie/YOLO detekcia/YOLOv8/Grayscale/weights/best.pt" --model-version "yolov8" --file-type "video" --task "validate"
 ```
+
+
+## Examples
+
+Gif images of examples for every action
+
+### Predict video
+
+<img src='predict_video_recording.gif'>
+
+### Predict photo
+
+<img src='images/predict_photo_recording.gif'>
+
+### Validate short videos
+
+<img src='images/validation_recording.gif'>

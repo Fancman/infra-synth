@@ -203,9 +203,7 @@ def validate_video(opt, records):
 	print(f"TP: {tp_knife}, TN: {tn_knife}, FP: {fp_knife}, FN: {fn_knife}")
 
 def predict_video(opt, person_model, knives_model):
-	cap = cv2.VideoCapture(opt.input)
-
-	print(cap)
+	cap = cv2.VideoCapture(opt.input)	
 
 	now = datetime.now()
 	current_time = now.strftime("%H:%M:%S")
@@ -294,6 +292,9 @@ def predict(opt):
 		knives_model = YOLO(opt.knife_weights)  # load a custom model
 	else:
 		knives_model = torch.hub.load('ultralytics/yolov5', 'custom', path=opt.knife_weights, force_reload=True)
+
+	if os.path.exists(os.path.join(opt.input) ):
+		print(f"Input file with path dont exist: {opt.input}")
 
 	if opt.file_type == "video":
 		predict_video(opt, person_model, knives_model)
