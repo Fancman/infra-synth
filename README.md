@@ -98,7 +98,7 @@ Gif images of examples for every action
 
 ### Predict video
 
-<img src='predict_video_recording.gif'>
+<img src='images/predict_video_recording.gif'>
 
 ### Predict photo
 
