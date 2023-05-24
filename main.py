@@ -248,6 +248,9 @@ def predict_video(opt, person_model, knives_model):
 		frames_processed += frames_shift # fps
 
 		cap.set(cv2.CAP_PROP_POS_FRAMES, frames_processed) #skip one second
+  
+		cv2.namedWindow(title, cv2.WND_PROP_FULLSCREEN)
+		cv2.setWindowProperty(title, cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_NORMAL)
 
 		cv2.imshow(title, frame)
 		
@@ -279,6 +282,9 @@ def predict_photo(opt, person_model, knives_model):
 
 	print(f"Person found: {person_found}", f"Knife found: {knife_found}")
 
+	cv2.namedWindow(title, cv2.WND_PROP_FULLSCREEN)
+	cv2.setWindowProperty(title, cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_NORMAL)
+ 
 	cv2.imshow(title, img)
 	
 	cv2.waitKey(0) 
@@ -624,6 +630,9 @@ def infer_video(opt):
 			cv2.putText(frame, 'Knife' + str(best_knife_confidence), (knife_x_min-3, knife_y_min-5), font, text_size, red, text_thickness);
 			
 			print("Human and knife appeared at " + str(math.floor(video_time_ms / 1000)) + " second")
+   
+		cv2.namedWindow(title, cv2.WND_PROP_FULLSCREEN)
+		cv2.setWindowProperty(title, cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_NORMAL)
 		
 		cv2.imshow(title, frame)
 		

@@ -73,7 +73,7 @@ python main.py --input "<PATH FOR INPUT>" --person-weights "<PATH FOR PERSON WEI
 
 Example on my PC:
 ```bash
-python main.py --input "C:/DEV/p" --person-weights  "C:/DEV/python/DP/cuda_yolo/runs/train/exp22/weights/bestpython main.py --input "E:/Handbrake/Segments/20.3.2023 - Rotunda/Dscf0001/Dscf0001-00.01.04.429-00.01.22.688-seg1.m4v" --person-weights "C:/DEV/python/DP/cuda_yolo/runs/train/exp22/weights/best.pt" --knife-weights "C:/DEV/python/DP/Odovzdanie/YOLO detekcia/YOLOv8/Grayscale/weights/best.pt" --model-version "yolov8" --file-type "video" --task "predict"
+python main.py --input "E:/Handbrake/Segments/20.3.2023 - Rotunda/Dscf0001/Dscf0001-00.01.04.429-00.01.22.688-seg1.m4v" --person-weights "C:/DEV/python/DP/cuda_yolo/runs/train/exp22/weights/best.pt" --knife-weights "C:/DEV/python/DP/Odovzdanie/YOLO detekcia/YOLOv8/Grayscale/weights/best.pt" --model-version "yolov8" --file-type "video" --task "predict"
 ```
 
 ## Validate videos
@@ -88,7 +88,7 @@ python main.py --input "<PATH FOR INPUT>" --person-weights "<PATH FOR PERSON WEI
 ```
 Example on my PC:
 ```bash
-python main.py --input "C:/DEV/p" --person-weights  "C:/DEV/python/DP/cuda_yolo/runs/train/exp22/weights/bestpython main.py --input "E:/Handbrake/Segments/20.3.2023 - Rotunda/Dscf0001/Dscf0001-00.01.04.429-00.01.22.688-seg1.m4v" --person-weights "C:/DEV/python/DP/cuda_yolo/runs/train/exp22/weights/best.pt" --knife-weights "C:/DEV/python/DP/Odovzdanie/YOLO detekcia/YOLOv8/Grayscale/weights/best.pt" --model-version "yolov8" --file-type "video" --task "validate"
+python main.py --input "E:/Handbrake/Segments/20.3.2023 - Rotunda/Dscf0001/Dscf0001-00.01.04.429-00.01.22.688-seg1.m4v" --person-weights "C:/DEV/python/DP/cuda_yolo/runs/train/exp22/weights/best.pt" --knife-weights "C:/DEV/python/DP/Odovzdanie/YOLO detekcia/YOLOv8/Grayscale/weights/best.pt" --model-version "yolov8" --file-type "video" --task "validate"
 ```
 
 
